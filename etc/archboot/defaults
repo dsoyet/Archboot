@@ -1,7 +1,8 @@
 # Created by Tobias Powalowski <tpowa@archlinux.org>
 # SPDX-License-Identifier: GPL-3.0-or-later
 # packages to install (eg. firmware, kernel packages)
-_PACKAGES="base linux linux-firmware linux-firmware-marvell bash-completion"
+_PACKAGES="base bash-completion blueberry btrfs-progs calibre chromium cryptsetup dnsmasq dosfstools efibootmgr efivar engrampa exo ffmpegthumbnailer freerdp garcon git iptables-nft iwd keepassxc linux-firmware linux-zen linux-zen-headers lostfiles man-db mpv-mpris neovim noto-fonts noto-fonts-cjk noto-fonts-emoji openbsd-netcat openssh openvpn pulseaudio python-pynacl qemu-full qutebrowser sbctl sshpass systemd-ukify terminus-font thunar thunar-archive-plugin tmux tumbler vagrant virt-manager wireguard-tools xfce4-appfinder xfce4-netload-plugin xfce4-panel xfce4-power-manager xfce4-pulseaudio-plugin xfce4-screensaver xfce4-screenshooter xfce4-session xfce4-settings xfce4-terminal xfconf xfdesktop xfwm4 xfwm4-themes xorg-server"
+#_PACKAGES="base linux linux-firmware linux-firmware-marvell bash-completion"
 # grub setup
 _GRUB_CONFIG="/usr/share/archboot/grub/archboot-main-grub.cfg"
 _GRUB_BACKGROUND="/usr/share/archboot/grub/archboot-background.png"
@@ -11,7 +12,7 @@ _GRAPHIC_IGNORE="linux linux-firmware linux-firmware-marvell"
 # VNC password
 _VNC_PW="archboot"
 ### Standard Web Browser: chromium or firefox
-_STANDARD_BROWSER="firefox"
+_STANDARD_BROWSER="chromium"
 ### GNOME defaults
 # GNOME packages
 _GNOME_PACKAGES="gnome-desktop-4 gnome-shell gnome-terminal gnome-control-center nautilus gvfs-smb gthumb file-roller gnome-keyring gedit"

@@ -21,14 +21,14 @@ _run ()
         _file_rename "/usr/share/archboot/base/etc/${i}" "/etc/${i}"
     done
     # add bash configuration, use color bash prompt, use color grep and ls output
-    _file_rename /usr/share/archboot/base/etc/profile.d/custom-bash-options.sh \
-                 /etc/profile.d/custom-bash-options.sh
+    # _file_rename /usr/share/archboot/base/etc/profile.d/custom-bash-options.sh \
+    #              /etc/profile.d/custom-bash-options.sh
     # add default bash setup
     for i in .bashrc .bash_profile .bash_logout; do
         _file_rename  "/etc/skel/${i}" "/root/${i}"
     done
     # add custom bash options
-    echo ". /etc/profile.d/custom-bash-options.sh" >> "${_ROOTFS}/root/.bashrc"
+    # echo ". /etc/profile.d/custom-bash-options.sh" >> "${_ROOTFS}/root/.bashrc"
     # add root user with empty password
     echo "root::0:root" > "${_ROOTFS}/etc/group"
     echo "root::0:0:Super User:/root:/bin/bash" > "${_ROOTFS}/etc/passwd"

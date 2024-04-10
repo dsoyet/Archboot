@@ -126,9 +126,9 @@ _auto_packages() {
         ! echo "${_PACKAGES}" | grep -qw iwd && _PACKAGES="${_PACKAGES} iwd"
     fi
     # Add broadcom-wl, if module is detected
-    if lsmod | grep -qw wl; then
-        ! echo "${_PACKAGES}" | grep -qw broadcom-wl && _PACKAGES="${_PACKAGES} broadcom-wl"
-    fi
+    # if lsmod | grep -qw wl; then
+    #     ! echo "${_PACKAGES}" | grep -qw broadcom-wl && _PACKAGES="${_PACKAGES} broadcom-wl"
+    # fi
     grep -q '^FONT=ter' /etc/vconsole.conf && _PACKAGES="${_PACKAGES} terminus-font"
     # only add firmware if already used
     _linux_firmware
